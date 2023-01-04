@@ -2,27 +2,23 @@ import React from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { List, ListItem, ListItemText, IconButton } from '@mui/material';
-import { Delete} from '@mui/icons-material';
+import { List} from '@mui/material';
+import CandidateComponent from './components/candidateItem';
+import { ListPadding } from './styled';
+
 
 const CandidatesList  = () => {
 return <div> 
       <Card sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 20 }}  gutterBottom>
-          Word of the Day
+         Lista de Candidatos
         </Typography>
-            <List dense={true}>
-                <ListItem
-                  secondaryAction={
-                    <IconButton edge="end" aria-label="delete">
-                       <Delete />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText />
-                </ListItem>
+          <ListPadding>
+            <List>
+             <CandidateComponent></CandidateComponent>
             </List>
+            </ListPadding>
       </CardContent>
      
     </Card>
