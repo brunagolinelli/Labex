@@ -9,3 +9,10 @@ gap: 50px;
 align-items: center;
 margin-top: 16px;
 `
+
+
+export const ListPadding = styled.div`
+.css-1p823my-MuiListItem-root {
+    padding-left: 0px;
+}
+`
